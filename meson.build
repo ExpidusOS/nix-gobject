@@ -33,3 +33,6 @@ if sdk.found()
 else
   uncrustify = disabler()
 endif
+
+gobject = dependency('gobject-2.0', required: true)
+libnix_expr = dependency('nix-expr', required: true)
